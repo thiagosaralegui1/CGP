@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/jumbo-sale-trial");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu {
+  display: flex;
+  background-color: rgba(0, 123, 217, 255);
+  text-align: center;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contiene-li-opciones {
+  display: flex;
+  gap: 20px;
+}
+
+.contiene-li-opciones li {
+  list-style: none;
+}
+
+.cont-tit-header img {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+}
+
+.contiene-li-opciones a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.cont-titulo-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.cont-titulo-info h1,
+.cont-titulo-info h2 {
+  padding: 25px;
+  font-family: "Jumbo Sale Trial", sans-serif;
+  font-size: 70px;
+  color: rgb(255, 102, 0);
+}
+
+.cont-titulo-info p {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.imagen-inicio {
+  margin: 10px;
+  height: 380px;
+}
+
+.contenedor-texto-inicio {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contenedor-texto-inicio p {
+  font-size: 16px;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+.contenedor-texto-inicio p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: rgb(1, 6, 58);
+}
+
+.botones-usos {
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.boton1,
+.boton2 {
+  padding: 6px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(255, 115, 0);
+}
+
+.boton1 a,
+.boton2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.contenedor-info-salas {
+  margin-top: 20px;
+  background-color: rgba(49, 42, 93, 255);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.contenedor-info-salas h2 {
+  font-size: 30px;
+}
+
+.contenedor-info-salas p {
+  margin-bottom: 10px;
+}
+
+.contenedor-sala-artistica p,
+.contenedor-sala-telas p,
+.contenedor-sala-funcional p {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+footer {
+  background-color: rgba(0, 123, 217, 255);
+  text-align: center;
+  padding: 20px;
+}
+
+.contiene-li-opciones-footer,
+.contiene-li-redes-footer {
+  list-style: none;
+}
+
+.contiene-li-opciones-footer a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.contenedor-redes {
+  margin-top: 20px;
+}
+
+.contenedor-redes img {
+  width: 22px;
+  height: 22px;
+}
+
+/*Actividades*/
+.cont-actividades {
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.cont-actividades h3 {
+  font-size: 50px;
+  margin-top: 10px;
+  color: rgb(255, 102, 0);
+}
+
+.cont-actividades p {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.artistica,
+.telas,
+.funcional {
+  margin-bottom: 60px;
+}
+
+/*Horarios*/
+.contenedor-horarios {
+  /*Cuando coder me permita, pongo un display flex jeje*/
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.contenedor-horarios h3 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1000;
+  color: rgb(255, 102, 0);
+}
+
+.contenedor-horarios h4 {
+  font-size: 20px;
+  color: rgba(49, 42, 93, 255);
+}
+
+.contenedor-horarios ul {
+  list-style: none;
+}
+
+.dias {
+  font-weight: 700;
+}
+
+.horarios-artistica,
+.horarios-telas,
+.horarios-funcional {
+  background-color: #c3d4e2;
+  color: rgba(49, 42, 93, 255);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  box-shadow: 6px 6px rgb(255, 123, 0);
+}
+
+/*Noticias*/
+
+.cont-titulo-info p {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.contenedor-noticias {
+  /*Cuando coder me permita, pongo un display flex jeje*/
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.contenedor-noticias h3 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1000;
+  color: rgb(255, 102, 0);
+}
+
+.info-noticias {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.espaciadonoticia {
+  margin-bottom: 30px;
+}
+
+.fechas {
+  color: rgb(90, 90, 90);
+}
+
+/*Contactanos*/
+.contenedor-formulario-contacto{
+  text-align: center;
+  /*acá pondría tremendo flex direction column*/
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-enviar {
+  padding: 6px;
+  border: none;
+  background-color: rgb(255, 102, 0);
+  margin-top: 10px;
+}
