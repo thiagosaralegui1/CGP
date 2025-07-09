@@ -5,35 +5,42 @@
   padding: 0;
 }
 
-.header-menu {
-  display: flex;
-  background-color: rgba(0, 123, 217, 255);
-  text-align: center;
-  padding: 10px;
-  justify-content: space-between;
-  align-items: center;
+.bg-custom {
+  background-color: rgba(0, 123, 217, 1);
 }
 
-.contiene-li-opciones {
-  display: flex;
-  gap: 20px;
-}
-
-.contiene-li-opciones li {
-  list-style: none;
-}
-
-.cont-tit-header img {
+.navbar-brand img {
   width: 120px;
   height: 120px;
   padding: 10px;
 }
 
-.contiene-li-opciones a {
+.navbar-nav {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.navbar-nav li {
+  margin: 10px;
+}
+
+.navbar-nav li a {
   color: white;
-  font-size: 18px;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: .3s;
+  padding: 0;
+}
+
+.navbar-nav li a:hover {
+  color: rgb(201, 177, 161);
+  font-weight: 700;
+}
+
+.active {
+  border-bottom: 2px solid #ff9900;
 }
 
 .cont-titulo-info {
@@ -42,11 +49,35 @@
   padding: 30px;
 }
 
+.imagen-inicio {
+  border-radius: 5%;
+}
+
+.imagen-superpuesta {
+  position: relative;
+  display: inline-block;
+}
+
+.alumna-vela {
+  position: absolute;
+  top: -20px;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 470px;
+  transition: .4s;
+}
+
+.alumna-vela:hover{
+  width: 490px;
+  top: -40px;
+}
+
 .cont-titulo-info h1,
 .cont-titulo-info h2 {
   padding: 25px;
   font-family: "Jumbo Sale Trial", sans-serif;
-  font-size: 70px;
+  font-size: 90px;
   color: rgb(255, 102, 0);
 }
 
@@ -62,21 +93,59 @@
 }
 
 .contenedor-texto-inicio {
-  padding: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
   text-align: center;
+  flex-direction: column;
 }
 
-.contenedor-texto-inicio p {
-  font-size: 16px;
-  margin-left: 190px;
-  margin-right: 190px;
+.presentación {
+  font-weight: 800;
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.muestra-actividades {
+  text-align: center;
+  padding: 20px;
+}
+
+.muestra-actividades ul {
+  list-style: none;
+}
+
+.muestra-actividades ul li {
+  margin-bottom: 30px;
+}
+
+.muestra-actividades a {
+  background-color: #2a2754;
+  padding: 12px;
+  margin: 20px;
+  transition: .3s;
+}
+
+.muestra-actividades a:hover {
+  padding: 15px;
+}
+
+.texto-botones-actividades {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: rgb(1, 6, 58);
+  font-weight: 600;
+  color: white;
+}
+
+.informacion-aparte{
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .contenedor-texto-inicio p {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  color: rgb(1, 6, 58);
 }
 
 .botones-usos {
@@ -252,7 +321,7 @@ footer {
 }
 
 /*Contactanos*/
-.contenedor-formulario-contacto{
+.contenedor-formulario-contacto {
   text-align: center;
   /*acá pondría tremendo flex direction column*/
   font-family: "Poppins", sans-serif;
