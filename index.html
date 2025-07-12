@@ -1,169 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Centro Gimnástico Paysandú</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-custom">
-            <a class="navbar-brand" href="#"><img class="icono-tit" src="assets/logo-cgp.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/actividades.html">Actividades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/horarios.html">Horarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/noticias.html">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+        <a class="navbar-brand" href="#"
+          ><img class="icono-tit" src="assets/logo-cgp.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/actividades.html"
+                >Actividades</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/horarios.html">Horarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contactanos.html"
+                >Contactanos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="cont-titulo-info">
-            <h1>Centro<br>
-                Gimnástico<br>
-                Paysandú</h1>
-            <div class="imagen-superpuesta">
-                <img src="assets/img-inicio2.jpg" alt="Imagen Chicos" class="imagen-inicio">
+      <div class="cont-titulo-info">
+        <h1>
+          Centro<br />
+          Gimnástico<br />
+          Paysandú
+        </h1>
+        <div class="imagen-superpuesta">
+          <img
+            src="assets/img-inicio2.jpg"
+            alt="Imagen Chicos"
+            class="imagen-inicio"
+          />
 
-                <img src="assets/Artistica-inicio.png" alt="Alumna vela" class="alumna-vela">
-            </div>
+          <img
+            src="assets/Artistica-inicio.png"
+            alt="Alumna vela"
+            class="alumna-vela"
+          />
         </div>
-        <div class="contenedor-texto-inicio">
-            <p class="presentación">¡Bienvenido al Centro Gimnástico Paysandú!
-            <p class="informacion-aparte">Somos un espacio dedicado a la pasión por el movimiento, la disciplina y la
-                superación personal. En el
-                Centro Gimnástico Paysandú vas a encontrar todo lo que necesitás para desarrollarte en distintas
-                disciplinas como:</p>
-            <div class="muestra-actividades">
-                <ul>
-                    <li>
-                        <p class="texto-botones-actividades"><a>Gimnasia Artística</a></p>
-                    </li>
-                    <li>
-                        <p class="texto-botones-actividades"><a>Acrobacia en Telas</a></p>
-                    </li>
-                    <li>
-                        <p class="texto-botones-actividades"><a>Entrenamiento Funcional</a></p>
-                    </li>
-                </ul>
-            </div>
-            <p>
-                Tanto si sos principiante como si ya tenés experiencia, contamos con profesores capacitados, un ambiente
-                amigable y grupos para diferentes niveles y edades. Nuestro objetivo es ayudarte a alcanzar tus metas,
-                en un entorno seguro, motivador y lleno de energía.
-            </p>
-            <div class="nuestras-paginas">
-                <p>Aquí vas a poder encontrar:
-
-                    <a class="boton-paginas">📅 Nuestros horarios de clases</a>
-
-                    <a class="boton-paginas">📝 Información sobre planes y precios</a>
-
-                    <a class="boton-paginas">🧑‍🏫 Conocé a nuestros profesores</a>
-
-                    <a class="boton-paginas">📰 Las últimas novedades y eventos</a>
-
-                    <a class="boton-paginas">📍La ubicación del centro y formas de contactarnos</a>
-
-                    También podés seguirnos en nuestras redes para estar al tanto de todo lo que pasa en el gimnasio.
-                    ¡Te esperamos para que descubras todo lo que sos capaz de lograr!
-                </p>
-            </div>
-
-            <div class="botones-usos">
-                <button class="boton1"><a href="./pages/actividades.html">Actividades</a></button>
-                <button class="boton2"><a href="./pages/horarios.html">Horarios</a></button>
-            </div>
+      </div>
+      <div class="contenedor-texto-inicio">
+        <p class="presentación">
+          ¡Bienvenido a la web del Centro Gimnástico Paysandú!
+        </p>
+        <p class="informacion-aparte">
+          Somos un espacio dedicado a la pasión por el movimiento, la disciplina
+          y la superación personal. En el Centro Gimnástico Paysandú vas a
+          encontrar todo lo que necesitás para desarrollarte en distintas
+          disciplinas como:
+        </p>
+        <div class="muestra-actividades">
+          <ul>
+            <li>
+              <p class="texto-botones-actividades"><a>Gimnasia Artística</a></p>
+            </li>
+            <li>
+              <p class="texto-botones-actividades"><a>Acrobacia en Telas</a></p>
+            </li>
+            <li>
+              <p class="texto-botones-actividades">
+                <a>Entrenamiento Funcional</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p class="informacion-aparte">
+          Tanto si sos principiante como si ya tenés experiencia, contamos con
+          profesores capacitados, un ambiente amigable y grupos para diferentes
+          niveles y edades. Nuestro objetivo es ayudarte a alcanzar tus metas,
+          en un entorno seguro, motivador y lleno de energía.
+        </p>
+      </div>
+      <div class="nuestras-paginas">
+        <p class="extra-deco">Aquí vas a poder encontrar:<br /></p>
+        <p><a class="boton-paginas">📅 Nuestros horarios de clases</a></p>
+        <hr />
+        <p>
+          <a class="boton-paginas">📝 Información sobre planes y precios</a>
+        </p>
+        <hr />
+        <p><a class="boton-paginas">🧑‍🏫 Conocé a nuestros profesores</a></p>
+        <hr />
+        <p><a class="boton-paginas">📰 Las últimas novedades y eventos</a></p>
+        <hr />
+        <p>
+          <a class="boton-paginas"
+            >📍La ubicación del centro y formas de contactarnos</a
+          >
+        </p>
+        <hr />
+        <p>
+          También podés seguirnos en nuestras redes para estar al tanto de todo
+          lo que pasa en el gimnasio. ¡Te esperamos para que descubras todo lo
+          que sos capaz de lograr!
+        </p>
+      </div>
     </main>
     <div class="contenedor-info-salas">
-        <h2>Nuestras Salas</h2>
-        <p>¡Aquí encontrarás nuestras salas dentro del gimnasio y su equipación (borrar)!</p>
-        <div class="contenedor-sala-artistica">
-            <h3>Sala de Artística</h3>
-            <img src="assets/sala-artistica.png" alt="Artística">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab animi quaerat fuga
-                sint ipsum, tempore, eveniet necessitatibus atque doloremque perferendis cum suscipit illum
-                omnis blanditiis maiores quos tenetur quasi.
-                Sequi, esse sed? Voluptas molestiae eligendi maxime inventore! Voluptates esse atque enim
-                saepe, nihil repellat deserunt perferendis doloribus recusandae sunt, fugit neque ratione
-                veritatis quis obcaecati similique quasi quidem quod.</p>
+      <h2>Nuestras Salas</h2>
+      <p>
+        ¡Aquí encontrarás nuestras salas dentro del gimnasio y su equipación!
+      </p>
+      <div class="contenedor-sala-artistica">
+        <h3>Sala de Artística</h3>
+        <div id="carouselArtistica" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselArtistica"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselArtistica"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselArtistica"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselArtistica"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/caroussel-artistica/muestrasala.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block estilos-letras">
+                <h5>Artística</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/caroussel-artistica/1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/caroussel-artistica/2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/caroussel-artistica/3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselArtistica"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselArtistica"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="contenedor-sala-telas">
-            <h3>Sala de Acrobacia en Telas</h3>
-            <img src="assets/sala-telas.png" alt="Telas">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, non reiciendis rerum officia
-                similique enim reprehenderit! Vel repellendus tenetur placeat sunt numquam eius,
-                perspiciatis, suscipit dolores adipisci quod dolor beatae.</p>
+      </div>
+      <hr />
+      <div class="contenedor-sala-telas">
+        <h3>Sala de Acrobacia en Telas</h3>
+        <div id="carouselTelas" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselTelas"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselTelas"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselTelas"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselTelas"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/caroussel-telas/salatelas.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block estilos-letras">
+                <h5>Telas</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/caroussel-telas/1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/caroussel-telas/2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/caroussel-telas/3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselTelas"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselTelas"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="contenedor-sala-funcional">
-            <h3>Sala de funcional</h3>
-            <img src="assets/sala-funcional.png" alt="Funcional">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur explicabo tempore modi
-                minus repudiandae voluptatem veritatis optio nesciunt, est omnis voluptatum quam officiis
-                magni provident eum dicta quia minima odit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae, eligendi molestiae ratione ipsum voluptates ipsam in velit, dignissimos voluptatum quos
-                nobis sint itaque temporibus ex laborum, dolorum modi placeat! Enim. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Nam error voluptas vero perferendis et possimus illo, animi autem
-                repellat minus sit aut aperiam repudiandae illum ab assumenda distinctio esse soluta.</p>
+      </div>
+      <hr />
+      <div class="contenedor-sala-funcional">
+        <h3>Sala de funcional</h3>
+        <div id="carouselFuncional" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselFuncional"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselFuncional"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselFuncional"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/caroussel-funcional/salafuncional.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block estilos-letras">
+                <h5>Funcional</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/caroussel-funcional/2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/caroussel-funcional/3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselFuncional"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselFuncional"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </div>
-</body>
-<footer>
-    <div class="menu-opciones-footer">
-        <nav>
-            <ul class="contiene-li-opciones-footer">
-                <li>
-                    <a class="link-item-footer ok" href="#">Inicio</a>
-                </li>
-                <li>
-                    <a class="link-item-footer" href="./pages/actividades.html">Actividades</a>
-                </li>
-                <li>
-                    <a class="link-item-footer" href="./pages/horarios.html">Horarios</a>
-                </li>
-                <li>
-                    <a class="link-item-footer" href="./pages/noticias.html">Noticias</a>
-                </li>
-                <li>
-                    <a class="link-item-footer" href="./pages/contactanos.html">Contactanos</a>
-                </li>
+    <div class="contenedor-ubicacion-botones">
+      <div class="contenedor-ubicación">
+        <h2>¿Dónde nos encontramos?</h2>
+        <p>
+          Nos encontramos en una ubicación privilegiada en el centro de la
+          ciudad, sobre Charrúas 1122, entre 19 de Abril y Dr. Luis Alberto de
+          Herrera. Estamos frente a la estación de ANCAP, en una zona muy
+          accesible, cerca de escuelas y liceos como de otros clubes deportivos.
+          ¡Ideal para venir caminando, en bici o en auto!
+        </p>
+        <img src="./assets/ubicación.jpg" alt="Ubicación" />
+      </div>
+      <a
+        class="boton-google-maps"
+        href="https://maps.app.goo.gl/UdjBX2Zqz6YVrcBM9"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><!--Se abre en otra pestaña pa-->
+        Accedé a Google Maps
+      </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <section class="ultimo">
+    <footer class="bg-body-tertiary text-center text-md-start">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="titulo-footer">Centro Gimástico Paysandú</h5>
+            <p class="texto-acomp-footer">
+              Muchas gracias por visitar la web del Centro Gimnástico Paysandú.
+              Esperamos que hayas encontrado toda la información que
+              necesitabas. Estamos siempre abiertos a sugerencias o consultas.
+              <b>¡Gracias por acompañarnos!</b>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 quit-linked">
+            <h5 class="titulo-footer-tipo2">Podés Visitar:</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-body">Instagram</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Facebook</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 quit-linked">
+            <h5 class="titulo-footer-tipo2">Links:</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-body">Actividades</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Horarios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2025 Centro Gimnástico Paysandú<br />
+        Desarrollado por: <b>Thiago Saralegui</b>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  <!-- <footer>
+    <div class="menu-opciones-footer">
+      <nav>
+        <ul class="contiene-li-opciones-footer">
+          <li>
+            <a class="link-item-footer ok" href="#">Inicio</a>
+          </li>
+          <li>
+            <a class="link-item-footer" href="./pages/actividades.html"
+              >Actividades</a
+            >
+          </li>
+          <li>
+            <a class="link-item-footer" href="./pages/horarios.html"
+              >Horarios</a
+            >
+          </li>
+          <li>
+            <a class="link-item-footer" href="./pages/noticias.html"
+              >Noticias</a
+            >
+          </li>
+          <li>
+            <a class="link-item-footer" href="./pages/contactanos.html"
+              >Contactanos</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="contenedor-redes">
-        <ul class="contiene-li-redes-footer">
-            <li>
-                <a class="link-redes-footer" href="https://www.instagram.com/centro.gimnastico_pdu/"><img
-                        src="assets/logo-instagram.png"></a>
-            </li>
-            <li>
-                <a class="link-redes-footer" href="https://www.facebook.com/centro.gimnastico.paysandu/"><img
-                        src="assets/logo-facebook.png"></a>
-            </li>
-        </ul>
+      <ul class="contiene-li-redes-footer">
+        <li>
+          <a
+            class="link-redes-footer"
+            href="https://www.instagram.com/centro.gimnastico_pdu/"
+            ><img src="assets/logo-instagram.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            class="link-redes-footer"
+            href="https://www.facebook.com/centro.gimnastico.paysandu/"
+            ><img src="assets/logo-facebook.png"
+          /></a>
+        </li>
+      </ul>
     </div>
-</footer>
-
+  </footer> -->
 </html>
