@@ -21,6 +21,18 @@
   width: 100%;
 }
 
+.estilo-burguer {
+  border: none !important;
+  background-color: #fff !important;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
 .navbar-nav li {
   margin: 10px;
 }
@@ -318,7 +330,7 @@ footer {
 }
 
 .cont-actividades h3 {
-  font-family: 'Jumbo Sale Trial';
+  font-family: "Jumbo Sale Trial";
   font-size: 50px;
   margin-top: 10px;
   color: rgb(255, 102, 0);
@@ -479,3 +491,61 @@ footer {
 
 /*MEDIAQUERY*/
 
+@media (max-width: 1080px) {
+  .imagen-inicio {
+    height: 250px;
+  }
+
+  .alumna-vela {
+    width: 370px;
+  }
+
+  .alumna-vela:hover {
+    width: 400px;
+  }
+}
+
+@media (max-width: 920px) {
+  .cont-titulo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .alumna-vela {
+    left: 30%;
+    top: -30%;
+  }
+}
+
+@media (max-width: 555px) {
+  .cont-titulo-info h1 {
+    font-size: 60px;
+  }
+
+  .alumna-vela {
+    left: 20%;
+  }
+
+  .informacion-aparte {
+    margin: 0;
+  }
+
+  .extra-deco {
+    font-size: 30px;
+  }
+
+  .nuestras-paginas {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .contenedor-info-salas h2 {
+    font-size: 36px;
+  }
+
+  .contenedor-ubicación p {
+    margin: 0;
+  }
+}
