@@ -318,12 +318,14 @@ footer {
 }
 
 .cont-actividades h3 {
+  font-family: 'Jumbo Sale Trial';
   font-size: 50px;
   margin-top: 10px;
   color: rgb(255, 102, 0);
 }
 
 .cont-actividades p {
+  margin-top: 10px;
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -335,26 +337,50 @@ footer {
 }
 
 /*Horarios*/
-.contenedor-horarios {
-  /*Cuando coder me permita, pongo un display flex jeje*/
+
+.tema-horarios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedor-horarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "artistica artistica telas"
+    "artistica artistica telas"
+    "artistica artistica funcional";
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 20px;
 }
 
-.contenedor-horarios h3 {
+.horarios-artistica {
+  grid-area: artistica;
+}
+
+.horarios-telas {
+  grid-area: telas;
+}
+
+.horarios-funcional {
+  grid-area: funcional;
+}
+
+.contenedor-horarios-grid h3 {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 1000;
   color: rgb(255, 102, 0);
 }
 
-.contenedor-horarios h4 {
+.contenedor-horarios-grid h4 {
   font-size: 20px;
   color: rgba(49, 42, 93, 255);
 }
 
-.contenedor-horarios ul {
+.contenedor-horarios-grid ul {
   list-style: none;
 }
 
@@ -369,12 +395,16 @@ footer {
   color: rgba(49, 42, 93, 255);
   padding: 20px;
   margin-bottom: 20px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin: 10px;
   box-shadow: 6px 6px rgb(255, 123, 0);
 }
 
 /*Noticias*/
+.tema-noticias {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 .cont-titulo-info p {
   margin-left: 150px;
@@ -382,7 +412,6 @@ footer {
 }
 
 .contenedor-noticias {
-  /*Cuando coder me permita, pongo un display flex jeje*/
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 20px;
@@ -410,8 +439,9 @@ footer {
 
 /*Contactanos*/
 .contenedor-formulario-contacto {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  /*acá pondría tremendo flex direction column*/
   font-family: "Poppins", sans-serif;
 }
 
