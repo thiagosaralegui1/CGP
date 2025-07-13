@@ -525,7 +525,13 @@ footer {
   }
 
   .alumna-vela {
-    left: 20%;
+    left: 14%;
+    width: 300px;
+    top: -3%;
+  }
+
+  .alumna-vela:hover{
+    width: 310px;
   }
 
   .informacion-aparte {
@@ -547,5 +553,11 @@ footer {
 
   .contenedor-ubicación p {
     margin: 0;
+  }
+}
+
+@media (max-width: 410px){
+  .imagen-inicio {
+    height:230px ;
   }
 }
