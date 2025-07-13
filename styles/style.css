@@ -513,9 +513,26 @@ footer {
     text-align: center;
   }
 
+  .nuestras-paginas {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
   .alumna-vela {
     left: 30%;
     top: -30%;
+  }
+
+  .informacion-aparte {
+    margin: 0;
+  }
+
+  .contenedor-ubicación p {
+    margin: 0;
+  }
+
+  .actividades-tit h2 {
+    font-size: 80px;
   }
 }
 
@@ -530,34 +547,57 @@ footer {
     top: -3%;
   }
 
-  .alumna-vela:hover{
+  .alumna-vela:hover {
     width: 310px;
-  }
-
-  .informacion-aparte {
-    margin: 0;
   }
 
   .extra-deco {
     font-size: 30px;
   }
 
-  .nuestras-paginas {
-    font-size: 18px;
-    font-weight: 500;
-  }
-
   .contenedor-info-salas h2 {
     font-size: 36px;
   }
 
-  .contenedor-ubicación p {
-    margin: 0;
+  .actividades-tit h2 {
+    font-size: 60px;
+  }
+
+  .cont-actividades p {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cont-actividades img {
+    width: 300px;
   }
 }
 
-@media (max-width: 410px){
+@media (max-width: 410px) {
   .imagen-inicio {
-    height:230px ;
+    height: 230px;
+  }
+
+  .actividades-tit h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .imagen-inicio {
+    height: 200px;
+  }
+
+  .alumna-vela {
+    width: 290px;
+  }
+
+  .alumna-vela:hover {
+    width: 300px;
+  }
+
+  .cont-titulo-info h1 {
+    font-size: 48px;
   }
 }
