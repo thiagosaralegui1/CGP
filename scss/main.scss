@@ -1,0 +1,14 @@
+//Base
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+//Components
+@use "./partials/components/header";
+@use "./partials/components/footer";
+
+//Sectiones
+@use "./partials/components/inicio";
+@use "./partials/components/actividades";
+@use "./partials/components/horarios";
+@use "./partials/components/noticias";
+@use "./partials/components/contacto";

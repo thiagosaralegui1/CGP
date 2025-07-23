@@ -1,0 +1,47 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+.bg-custom {
+  background-color: variables.$azul-gimnasio;
+}
+
+.navbar-brand img {
+  @include mixins.imagenes(120px, 120px, 10px);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  li {
+    margin: 10px;
+    a {
+      color: white;
+      font-family: variables.$poppins;
+      font-weight: 300;
+      font-size: 20px;
+      transition: 0.3s;
+      padding: 0;
+      &:hover {
+        color: rgb(201, 177, 161);
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.estilo-burguer {
+  border: none;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.active {
+  border-bottom: 2px solid #ff9900;
+}

@@ -1,0 +1,38 @@
+@use "../utilities/variables";
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin imagenes ($width, $height, $padding){
+    width: $width;
+    height: $height;
+    padding: $padding;
+}
+
+@mixin titulo-estilo-jumbo ($size) {
+    font-family: variables.$jumbo;
+    font-size: $size;
+    color: variables.$naranja-gimnasio;
+}
+
+@mixin titulo-estilo-poppins ($size, $color) {
+    font-family: variables.$poppins;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin contenedor-text-general ($display, $justify, $align, $direction){
+    display: $display;
+    justify-content: $justify;
+    text-align: $align;
+    flex-direction: $direction;
+}
+
+@mixin titulo-destacado($size) {
+    font-weight: 800;
+    font-size: $size;
+  }

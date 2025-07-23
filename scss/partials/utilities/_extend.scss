@@ -1,0 +1,7 @@
+@use "../utilities/variables";
+%button {
+    font-family: variables.$poppins;
+    font-size: 20px;
+    font-weight: 600;
+    transform: 0.3s;
+}

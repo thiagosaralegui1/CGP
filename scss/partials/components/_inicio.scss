@@ -1,0 +1,205 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+.cont-titulo-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.imagen-inicio {
+  border-radius: 5%;
+}
+
+.imagen-superpuesta {
+  position: relative;
+  display: inline-block;
+}
+
+.alumna-vela {
+  position: absolute;
+  top: -20px;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 470px;
+  transition: variables.$transicion-promedio;
+
+  &:hover {
+    width: 490px;
+    top: -40px;
+  }
+}
+
+.cont-titulo-info h1,
+.cont-titulo-info h2 {
+  @include mixins.titulo-estilo-jumbo(90px);
+  padding: 25px;
+}
+
+.cont-titulo-info p {
+  @include mixins.titulo-estilo-poppins(20px, black);
+  padding: 20px;
+}
+
+.imagen-inicio {
+  margin: 10px;
+  height: 380px;
+}
+
+.contenedor-texto-inicio {
+  @include mixins.contenedor-text-general(flex, center, center, column);
+  margin: 20px;
+  p {
+    font-family: variables.$poppins;
+    font-size: 20px;
+  }
+}
+
+.informacion-aparte {
+  margin: variables.$margin-pcs;
+}
+
+.presentación {
+  @include mixins.titulo-destacado(40px);
+  margin-top: 30px;
+}
+
+.texto-botones-actividades {
+  @extend %button;
+}
+
+.nuestras-paginas {
+  @include mixins.contenedor-text-general(flex, space-between, center, column);
+  font-family: variables.$poppins;
+  align-items: center;
+  font-size: 20px;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 20px;
+  a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    transition: variables.$transicion-promedio;
+    &:hover {
+      color: rgb(140, 140, 218);
+    }
+  }
+}
+
+.extra-deco {
+  @include mixins.titulo-destacado(40px);
+}
+
+.muestra-actividades {
+  text-align: center;
+  padding: 20px;
+  a {
+    background-color: variables.$violeta-gimnasio;
+    padding: 12px;
+    margin: 20px;
+    transition: variables.$transicion-promedio;
+    &:hover {
+      padding: 15px;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.contenedor-info-salas {
+  background-color: variables.$violeta-gimnasio;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-family: variables.$poppins;
+  h2 {
+    @include mixins.titulo-destacado(60px);
+  }
+  p {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.carousel-comun {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  max-height: 600px;
+}
+
+.carousel {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(32, 0, 214, 0.6);
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.estilos-letras {
+  h5 {
+    font-weight: 800;
+    font-size: 30px;
+  }
+}
+
+.contenedor-salas-general {
+  margin-bottom: 20px;
+}
+
+.contenedor-ubicación {
+  @include mixins.contenedor-text-general(flex, center, center, column);
+  padding: 30px;
+  h2 {
+    font-family: variables.$poppins;
+    @include mixins.titulo-destacado(30px);
+  }
+  p {
+    font-family: variables.$poppins;
+    font-weight: 300;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.contenedor-ubicacion-botones {
+  text-align: center;
+  margin-bottom: 20px;
+  .boton-google-maps{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(145, 255, 0, 0.555);
+    text-decoration: none;
+    font-family: variables.$poppins;
+    font-weight: 800;
+    color: black;
+    transition: variables.$transicion-promedio;
+  }
+}
+

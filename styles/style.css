@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/jumbo-sale-trial");
 * {
@@ -5,8 +6,16 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 .bg-custom {
-  background-color: rgba(0, 123, 217, 1);
+  background-color: rgb(0, 123, 217);
 }
 
 .navbar-brand img {
@@ -20,10 +29,25 @@
   justify-content: end;
   width: 100%;
 }
+.navbar-nav li {
+  margin: 10px;
+}
+.navbar-nav li a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.3s;
+  padding: 0;
+}
+.navbar-nav li a:hover {
+  color: rgb(201, 177, 161);
+  font-weight: 700;
+}
 
 .estilo-burguer {
-  border: none !important;
-  background-color: #fff !important;
+  border: none;
+  background-color: #fff;
   padding: 8px;
   border-radius: 6px;
   margin: 10px;
@@ -33,26 +57,36 @@
   text-align: center;
 }
 
-.navbar-nav li {
-  margin: 10px;
-}
-
-.navbar-nav li a {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  transition: 0.3s;
-  padding: 0;
-}
-
-.navbar-nav li a:hover {
-  color: rgb(201, 177, 161);
-  font-weight: 700;
-}
-
 .active {
   border-bottom: 2px solid #ff9900;
+}
+
+footer {
+  background-color: rgb(0, 130, 217);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.titulo-footer {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.texto-acomp-footer {
+  font-weight: 200;
+}
+
+.titulo-footer-tipo2 {
+  font-weight: 700;
+  font-size: 23px;
+  color: white;
+}
+
+.texto-botones-actividades {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  transform: 0.3s;
 }
 
 .cont-titulo-info {
@@ -77,9 +111,8 @@
   transform: translateX(-50%);
   z-index: 10;
   width: 470px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
-
 .alumna-vela:hover {
   width: 490px;
   top: -40px;
@@ -87,16 +120,17 @@
 
 .cont-titulo-info h1,
 .cont-titulo-info h2 {
-  padding: 25px;
   font-family: "Jumbo Sale Trial", sans-serif;
   font-size: 90px;
   color: rgb(255, 102, 0);
+  padding: 25px;
 }
 
 .cont-titulo-info p {
-  padding: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+  color: black;
+  padding: 20px;
 }
 
 .imagen-inicio {
@@ -107,14 +141,57 @@
 .contenedor-texto-inicio {
   display: flex;
   justify-content: center;
-  margin: 20px;
   text-align: center;
   flex-direction: column;
+  margin: 20px;
+}
+.contenedor-texto-inicio p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.informacion-aparte {
+  margin: 0px 230px 0px 230px;
 }
 
 .presentación {
   font-weight: 800;
+  font-size: 40px;
   margin-top: 30px;
+}
+
+.nuestras-paginas {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  font-size: 20px;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 20px;
+}
+.nuestras-paginas a {
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.nuestras-paginas a:hover {
+  color: rgb(140, 140, 218);
+}
+
+.extra-deco {
+  font-weight: 800;
   font-size: 40px;
 }
 
@@ -122,100 +199,42 @@
   text-align: center;
   padding: 20px;
 }
-
-.muestra-actividades ul {
-  list-style: none;
-}
-
-.muestra-actividades ul li {
-  margin-bottom: 30px;
-}
-
 .muestra-actividades a {
   background-color: #2a2754;
   padding: 12px;
   margin: 20px;
   transition: 0.3s;
 }
-
 .muestra-actividades a:hover {
   padding: 15px;
 }
-
-.texto-botones-actividades {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: rgb(1, 6, 58);
-  font-weight: 600;
-  color: white;
+.muestra-actividades ul {
+  list-style: none;
 }
-
-.informacion-aparte {
-  margin-left: 230px;
-  margin-right: 230px;
-}
-
-.contenedor-texto-inicio p {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-}
-
-.nuestras-paginas {
-  display: flex;
-  flex-direction: column;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  text-align: center;
-  background-image: url(../assets/background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 110vh;
-  margin: 0;
-  color: white;
-  font-weight: 700;
-  font-size: 24px;
-  padding: 20px;
-}
-
-.extra-deco {
-  font-weight: 900;
-  font-size: 40px;
-}
-
-.nuestras-paginas a {
-  display: block;
-  margin: 10px;
-  text-decoration: none;
-  color: white;
-  transition: 0.2s;
+.muestra-actividades ul li {
+  margin-bottom: 30px;
 }
 
 .contenedor-info-salas {
-  background-color: rgba(49, 42, 93, 255);
+  background-color: #2a2754;
   color: white;
   padding: 40px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-
 .contenedor-info-salas h2 {
-  font-weight: 900;
+  font-weight: 800;
   font-size: 60px;
 }
-
 .contenedor-info-salas p {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
 .contenedor-info-salas h3 {
   font-weight: 700;
 }
 
-#carouselArtistica,
-#carouselTelas,
-#carouselFuncional {
+.carousel-comun {
   width: 80%;
   max-width: 600px;
   margin: auto;
@@ -224,17 +243,11 @@
 
 .carousel .carousel-control-prev-icon,
 .carousel .carousel-control-next-icon {
-  background-color: rgba(32, 0, 214, 0.6); /* Fondo oscuro translúcido */
+  background-color: rgba(32, 0, 214, 0.6);
   border-radius: 50%;
   padding: 30px;
   width: 50px;
   height: 50px;
-}
-
-.carousel .carousel-control-prev,
-.carousel .carousel-control-next {
-  width: 10%;
-  margin: 10px;
 }
 
 .estilos-letras h5 {
@@ -242,33 +255,28 @@
   font-size: 30px;
 }
 
-.contenedor-sala-artistica,
-.contenedor-sala-telas,
-.contenedor-sala-funcional {
+.contenedor-salas-general {
   margin-bottom: 20px;
 }
 
 .contenedor-ubicación {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
   padding: 30px;
 }
-
 .contenedor-ubicación h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 30px;
 }
-
 .contenedor-ubicación p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   margin-left: 200px;
   margin-right: 200px;
 }
-
 .contenedor-ubicación img {
   width: 40%;
   margin: 0 auto;
@@ -279,8 +287,7 @@
   text-align: center;
   margin-bottom: 20px;
 }
-
-.boton-google-maps {
+.contenedor-ubicacion-botones .boton-google-maps {
   margin-top: 30px;
   padding: 10px;
   background-color: rgba(145, 255, 0, 0.555);
@@ -288,316 +295,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   color: black;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
-.boton-google-maps:hover {
-  color: rgb(29, 23, 23);
-  background-color: rgba(109, 192, 0, 0.795);
-}
-
-footer {
-  background-color: rgba(0, 130, 217, 255);
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
-
-.titulo-footer {
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.texto-acomp-footer {
-  font-weight: 200;
-}
-
-.titulo-footer-tipo2 {
-  font-weight: 700;
-  font-size: 23px;
-  color: white;
-}
-
-/*Actividades*/
-
-.actividades-tit {
-  align-items: center;
-}
-
-.cont-actividades {
-  padding: 20px;
-  text-align: center;
-  font-family: "Poppins";
-}
-
-.cont-actividades h3 {
-  font-family: "Jumbo Sale Trial";
-  font-size: 50px;
-  margin-top: 10px;
-  color: rgb(255, 102, 0);
-}
-
-.cont-actividades p {
-  margin-top: 10px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.artistica,
-.telas,
-.funcional {
-  margin-bottom: 60px;
-}
-
-/*Horarios*/
-
-.tema-horarios {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.contenedor-horarios-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "artistica artistica telas"
-    "artistica artistica telas"
-    "artistica artistica funcional";
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  padding: 20px;
-}
-
-.horarios-artistica {
-  grid-area: artistica;
-}
-
-.horarios-telas {
-  grid-area: telas;
-}
-
-.horarios-funcional {
-  grid-area: funcional;
-}
-
-.contenedor-horarios-grid h3 {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 1000;
-  color: rgb(255, 102, 0);
-}
-
-.contenedor-horarios-grid h4 {
-  font-size: 20px;
-  color: rgba(49, 42, 93, 255);
-}
-
-.contenedor-horarios-grid ul {
-  list-style: none;
-}
-
-.dias {
-  font-weight: 700;
-}
-
-.horarios-artistica,
-.horarios-telas,
-.horarios-funcional {
-  background-color: #c3d4e2;
-  color: rgba(49, 42, 93, 255);
-  padding: 20px;
-  margin-bottom: 20px;
-  margin: 10px;
-  box-shadow: 6px 6px rgb(255, 123, 0);
-}
-
-/*Noticias*/
-.tema-noticias {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.cont-titulo-info p {
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.contenedor-noticias {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  padding: 20px;
-}
-
-.contenedor-noticias h3 {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 1000;
-  color: rgb(255, 102, 0);
-}
-
-.info-noticias {
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.espaciadonoticia {
-  margin-bottom: 30px;
-}
-
-.fechas {
-  color: rgb(90, 90, 90);
-}
-
-/*Contactanos*/
-
-.tema-contacto {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.contenedor-formulario-contacto {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  background-color: #ff9900;
-  padding: 20px;
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-bottom: 30px;
-}
-
-.contenedor-formulario-contacto form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.contenedor-formulario-contacto input {
-  padding: 6px;
-  width: 100%;
-  max-width: 300px;
-  box-sizing: border-box;
-}
-
-.boton-enviar {
-  padding: 6px;
-  border: none;
-  background-color: rgb(255, 102, 0);
-  color: white;
-  cursor: pointer;
-}
-
-/*MEDIAQUERY*/
-
-@media (max-width: 1080px) {
-  .imagen-inicio {
-    height: 250px;
-  }
-
-  .alumna-vela {
-    width: 370px;
-  }
-
-  .alumna-vela:hover {
-    width: 400px;
-  }
-}
-
-@media (max-width: 920px) {
-  .cont-titulo-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .nuestras-paginas {
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  .alumna-vela {
-    left: 30%;
-    top: -30%;
-  }
-
-  .informacion-aparte {
-    margin: 0;
-  }
-
-  .contenedor-ubicación p {
-    margin: 0;
-  }
-
-  .actividades-tit h2 {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 555px) {
-  .cont-titulo-info h1 {
-    font-size: 60px;
-  }
-
-  .alumna-vela {
-    left: 14%;
-    width: 300px;
-    top: -3%;
-  }
-
-  .alumna-vela:hover {
-    width: 310px;
-  }
-
-  .extra-deco {
-    font-size: 30px;
-  }
-
-  .contenedor-info-salas h2 {
-    font-size: 36px;
-  }
-
-  .actividades-tit h2 {
-    font-size: 60px;
-  }
-
-  .cont-actividades p {
-    margin-top: 10px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .cont-actividades img {
-    width: 300px;
-  }
-}
-
-@media (max-width: 410px) {
-  .imagen-inicio {
-    height: 230px;
-  }
-
-  .actividades-tit h2 {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 380px) {
-  .imagen-inicio {
-    height: 200px;
-  }
-
-  .alumna-vela {
-    width: 290px;
-  }
-
-  .alumna-vela:hover {
-    width: 300px;
-  }
-
-  .cont-titulo-info h1 {
-    font-size: 48px;
-  }
-}
+/*# sourceMappingURL=style.css.map */
