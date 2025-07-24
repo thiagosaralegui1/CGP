@@ -118,7 +118,9 @@
 }
 
 .contenedor-info-salas {
-  background-color: variables.$violeta-gimnasio;
+  background: linear-gradient(-45deg, variables.$violeta-gimnasio, variables.$naranja-gimnasio, variables.$azul-gimnasio, #2a2754);
+  background-size: 400% 400%; /*logra ese efecto movimiento (MDN web)*/
+  animation: moverFondo 10s ease infinite;
   color: white;
   padding: 40px;
   text-align: center;
@@ -197,4 +199,3 @@
     transition: variables.$transicion-promedio;
   }
 }
-
