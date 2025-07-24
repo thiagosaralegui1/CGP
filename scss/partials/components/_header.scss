@@ -20,10 +20,10 @@
       font-family: variables.$poppins;
       font-weight: 300;
       font-size: 20px;
-      transition: 0.3s;
+      transition: 0.2s;
       padding: 0;
       &:hover {
-        color: rgb(201, 177, 161);
+        color: variables.$violeta-gimnasio;
         font-weight: 700;
       }
     }

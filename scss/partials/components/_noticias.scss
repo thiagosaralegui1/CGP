@@ -1,0 +1,33 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+.tema-noticias {
+  @include mixins.flex(column, center, center);
+}
+
+.contenedor-titulo-info p {
+  @include mixins.margins(0px, 150px, 0px, 150px);
+}
+
+.contenedor-noticias {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  h3 {
+    @include mixins.titulo-estilo-poppins(30px, variables.$naranja-gimnasio);
+    font-weight: 1000;
+  }
+}
+
+.info-noticias {
+  @include mixins.margins(0px, 150px, 0px, 150px);
+}
+
+.espaciado-noticias {
+  margin-bottom: 30px;
+}
+
+.fechas {
+  color: rgb(90, 90, 90);
+}

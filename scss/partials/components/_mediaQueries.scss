@@ -1,0 +1,220 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+@media (max-width: 1150px) {
+  .imagen-inicio {
+    height: 290px;
+  }
+
+  .contenedor-horarios-grid {
+    h3 {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  .dias {
+    font-size: 16px;
+  }
+
+  .horario-comun {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .imagen-inicio {
+    height: 220px;
+  }
+
+  .alumna-vela {
+    width: 370px;
+    &:hover {
+      width: 370px;
+    }
+  }
+
+  .contenedor-formulario-contacto {
+    @include mixins.margins(0px, 200px, 30px, 200px);
+  }
+}
+
+@media (max-width: 920px) {
+  .cont-titulo-info {
+    @include mixins.flex(column, center, center);
+    text-align: center;
+  }
+  .nuestras-paginas {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .alumna-vela {
+    left: 10%;
+    top: -30%;
+    &:hover {
+      left: 10%;
+      top: -30%;
+      width: 380px;
+    }
+  }
+
+  .informacion-aparte {
+    margin: 0;
+  }
+
+  .contenedor-ubicación p {
+    margin: 0;
+  }
+
+  .actividades-tit h2 {
+    font-size: 80px;
+  }
+
+  .info-noticias {
+    @include mixins.margins(5px, 50px, 10px, 50px);
+  }
+
+  .contenedor-formulario-contacto {
+    @include mixins.margins(0px, 150px, 30px, 150px);
+  }
+
+  .tema-contacto h2 {
+    font-size: 70px;
+  }
+}
+
+
+@media (max-width: 555px) {
+  .cont-titulo-info h1 {
+    font-size: 60px;
+  }
+  .alumna-vela {
+    left: 14%;
+    width: 260px;
+    top: -3%;
+    &:hover {
+      left: 14%;
+      top: -3%;
+      width: 280px;
+    }
+  }
+  .extra-deco {
+    font-size: 30px;
+  }
+  .actividades-tit h2 {
+    font-size: 60px;
+  }
+
+  .cont-actividades {
+    p {
+      @include mixins.margins(10px, 0px, 0px, 0px);
+    }
+    img {
+      width: 300px;
+    }
+  }
+  .tema-horarios h2 {
+    font-size: 70px;
+    padding: 10px;
+  }
+  .contenedor-horarios-grid {
+    @include mixins.flex(column, center, center);
+  }
+  .horario-comun {
+    width: 100%;
+  }
+
+  .cont-titulo-info {
+    h2 {
+      font-size: 70px;
+      padding: 5px;
+    }
+    p {
+      padding: 5px;
+    }
+  }
+
+  .contenedor-noticias {
+    padding: 5px;
+  }
+  .espaciadonoticia {
+    h3 {
+      font-size: 20px;
+      @include mixins.margins(0px, 10px, 10px, 0px);
+    }
+    img {
+      width: 300px;
+    }
+  }
+
+  .tema-contacto h2 {
+    font-size: 50px;
+  }
+
+  .contenedor-formulario-contacto {
+    @include mixins.margins(0px, 60px, 30px, 60px);
+  }
+}
+
+@media (max-width: 410px) {
+  .imagen-inicio {
+    height: 230px;
+  }
+
+  .actividades-tit h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .imagen-inicio {
+    height: 200px;
+  }
+
+  .alumna-vela {
+    width: 230px;
+    &:hover {
+      width: 240px;
+    }
+  }
+
+  .cont-titulo-info h1 {
+    font-size: 48px;
+  }
+
+  .muestra-actividades a {
+    margin: 0;
+  }
+
+  .actividad-comun img {
+    width: 260px;
+  }
+
+  .tema-horarios h2 {
+    font-size: 50px;
+    padding: 10px;
+  }
+
+  .espaciadonoticia {
+    img {
+      width: 260px;
+    }
+  }
+
+  .info-noticias {
+    @include mixins.margins(5px, 20px, 10px, 20px);
+  }
+
+  .tema-contacto h2 {
+    font-size: 45px;
+  }
+
+  .contenedor-formulario-contacto {
+    @include mixins.margins(0px, 30px, 30px, 30px);
+  }
+}

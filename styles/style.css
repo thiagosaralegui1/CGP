@@ -14,6 +14,10 @@ li {
   list-style-type: none;
 }
 
+ul {
+  padding-left: 0;
+}
+
 .bg-custom {
   background-color: rgb(0, 123, 217);
 }
@@ -37,11 +41,11 @@ li {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  transition: 0.3s;
+  transition: 0.2s;
   padding: 0;
 }
 .navbar-nav li a:hover {
-  color: rgb(201, 177, 161);
+  color: #2a2754;
   font-weight: 700;
 }
 
@@ -89,14 +93,15 @@ footer {
   transform: 0.3s;
 }
 
+.contenedor-horarios-grid, .cont-actividades, .contenedor-texto-inicio p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
 .cont-titulo-info {
   display: flex;
   justify-content: space-around;
   padding: 30px;
-}
-
-.imagen-inicio {
-  border-radius: 5%;
 }
 
 .imagen-superpuesta {
@@ -136,6 +141,7 @@ footer {
 .imagen-inicio {
   margin: 10px;
   height: 380px;
+  border-radius: 5%;
 }
 
 .contenedor-texto-inicio {
@@ -145,11 +151,6 @@ footer {
   flex-direction: column;
   margin: 20px;
 }
-.contenedor-texto-inicio p {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-}
-
 .informacion-aparte {
   margin: 0px 230px 0px 230px;
 }
@@ -274,8 +275,7 @@ footer {
 .contenedor-ubicación p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 0px 200px 0px 200px;
 }
 .contenedor-ubicación img {
   width: 40%;
@@ -296,6 +296,324 @@ footer {
   font-weight: 800;
   color: black;
   transition: 0.3s;
+}
+
+.actividades-tit {
+  align-items: center;
+}
+
+.cont-actividades {
+  padding: 20px;
+  text-align: center;
+}
+.cont-actividades h3 {
+  font-family: "Jumbo Sale Trial", sans-serif;
+  font-size: 50px;
+  margin-top: 10px;
+  color: rgb(255, 102, 0);
+}
+.cont-actividades p {
+  margin-top: 10px;
+  margin: 0px 150px 0px 150px;
+}
+
+.actividad-comun {
+  margin-bottom: 60px;
+}
+
+.tema-horarios {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contenedor-horarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "artistica artistica telas" "artistica artistica telas" "artistica artistica funcional";
+  text-align: center;
+  padding: 20px;
+}
+.contenedor-horarios-grid h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 102, 0);
+  font-weight: 1000;
+}
+.contenedor-horarios-grid .dias {
+  font-weight: 700;
+}
+
+.horarios-artistica {
+  grid-area: artistica;
+}
+
+.horarios-telas {
+  grid-area: telas;
+}
+
+.horarios-funcional {
+  grid-area: funcional;
+}
+
+.horario-comun {
+  background-color: #c3d4e2;
+  color: rgb(49, 42, 93);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin: 10px;
+  box-shadow: 6px 6px rgb(255, 123, 0);
+}
+
+.tema-noticias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-titulo-info p {
+  margin: 0px 150px 0px 150px;
+}
+
+.contenedor-noticias {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+.contenedor-noticias h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 102, 0);
+  font-weight: 1000;
+}
+
+.info-noticias {
+  margin: 0px 150px 0px 150px;
+}
+
+.espaciado-noticias {
+  margin-bottom: 30px;
+}
+
+.fechas {
+  color: rgb(90, 90, 90);
+}
+
+.tema-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-formulario-contacto {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #ff9900;
+  padding: 20px;
+  margin: 0px 400px 30px 400px;
+}
+.contenedor-formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.contenedor-formulario-contacto input {
+  padding: 6px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.boton-enviar {
+  padding: 6px;
+  border: none;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .imagen-inicio {
+    height: 290px;
+  }
+  .contenedor-horarios-grid h3 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .contenedor-horarios-grid h4 {
+    font-size: 16px;
+  }
+  .dias {
+    font-size: 16px;
+  }
+  .horario-comun {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1080px) {
+  .imagen-inicio {
+    height: 220px;
+  }
+  .alumna-vela {
+    width: 370px;
+  }
+  .alumna-vela:hover {
+    width: 370px;
+  }
+  .contenedor-formulario-contacto {
+    margin: 0px 200px 30px 200px;
+  }
+}
+@media (max-width: 920px) {
+  .cont-titulo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .nuestras-paginas {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .alumna-vela {
+    left: 10%;
+    top: -30%;
+  }
+  .alumna-vela:hover {
+    left: 10%;
+    top: -30%;
+    width: 380px;
+  }
+  .informacion-aparte {
+    margin: 0;
+  }
+  .contenedor-ubicación p {
+    margin: 0;
+  }
+  .actividades-tit h2 {
+    font-size: 80px;
+  }
+  .info-noticias {
+    margin: 5px 50px 10px 50px;
+  }
+  .contenedor-formulario-contacto {
+    margin: 0px 150px 30px 150px;
+  }
+  .tema-contacto h2 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 555px) {
+  .cont-titulo-info h1 {
+    font-size: 60px;
+  }
+  .alumna-vela {
+    left: 14%;
+    width: 260px;
+    top: -3%;
+  }
+  .alumna-vela:hover {
+    left: 14%;
+    top: -3%;
+    width: 280px;
+  }
+  .extra-deco {
+    font-size: 30px;
+  }
+  .actividades-tit h2 {
+    font-size: 60px;
+  }
+  .cont-actividades p {
+    margin: 10px 0px 0px 0px;
+  }
+  .cont-actividades img {
+    width: 300px;
+  }
+  .tema-horarios h2 {
+    font-size: 70px;
+    padding: 10px;
+  }
+  .contenedor-horarios-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .horario-comun {
+    width: 100%;
+  }
+  .cont-titulo-info h2 {
+    font-size: 70px;
+    padding: 5px;
+  }
+  .cont-titulo-info p {
+    padding: 5px;
+  }
+  .contenedor-noticias {
+    padding: 5px;
+  }
+  .espaciadonoticia h3 {
+    font-size: 20px;
+    margin: 0px 10px 10px 0px;
+  }
+  .espaciadonoticia img {
+    width: 300px;
+  }
+  .tema-contacto h2 {
+    font-size: 50px;
+  }
+  .contenedor-formulario-contacto {
+    margin: 0px 60px 30px 60px;
+  }
+}
+@media (max-width: 410px) {
+  .imagen-inicio {
+    height: 230px;
+  }
+  .actividades-tit h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 380px) {
+  .imagen-inicio {
+    height: 200px;
+  }
+  .alumna-vela {
+    width: 230px;
+  }
+  .alumna-vela:hover {
+    width: 240px;
+  }
+  .cont-titulo-info h1 {
+    font-size: 48px;
+  }
+  .muestra-actividades a {
+    margin: 0;
+  }
+  .actividad-comun img {
+    width: 260px;
+  }
+  .tema-horarios h2 {
+    font-size: 50px;
+    padding: 10px;
+  }
+  .espaciadonoticia img {
+    width: 260px;
+  }
+  .info-noticias {
+    margin: 5px 20px 10px 20px;
+  }
+  .tema-contacto h2 {
+    font-size: 45px;
+  }
+  .contenedor-formulario-contacto {
+    margin: 0px 30px 30px 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

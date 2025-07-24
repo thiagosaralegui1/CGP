@@ -8,10 +8,6 @@
   padding: 30px;
 }
 
-.imagen-inicio {
-  border-radius: 5%;
-}
-
 .imagen-superpuesta {
   position: relative;
   display: inline-block;
@@ -46,14 +42,14 @@
 .imagen-inicio {
   margin: 10px;
   height: 380px;
+  border-radius: 5%;
 }
 
 .contenedor-texto-inicio {
   @include mixins.contenedor-text-general(flex, center, center, column);
   margin: 20px;
   p {
-    font-family: variables.$poppins;
-    font-size: 20px;
+    @extend %texto-general;
   }
 }
 
@@ -178,8 +174,7 @@
   p {
     font-family: variables.$poppins;
     font-weight: 300;
-    margin-left: 200px;
-    margin-right: 200px;
+    @include mixins.margins(0px, 200px, 0px, 200px);
   }
   img {
     width: 40%;

@@ -1,0 +1,35 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+.tema-contacto {
+  @include mixins.flex(column, center, center);
+}
+
+.contenedor-formulario-contacto {
+  text-align: center;
+  font-family: variables.$poppins;
+  background-color: #ff9900;
+  padding: 20px;
+  @include mixins.margins(0px, 400px, 30px, 400px);
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  input {
+    padding: 6px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+}
+
+.boton-enviar {
+  padding: 6px;
+  border: none;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  cursor: pointer;
+}

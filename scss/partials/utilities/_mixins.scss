@@ -13,6 +13,10 @@
     padding: $padding;
 }
 
+@mixin margins ($top, $right, $bottom, $left) {
+    margin: $top $right $bottom $left;
+}
+
 @mixin titulo-estilo-jumbo ($size) {
     font-family: variables.$jumbo;
     font-size: $size;

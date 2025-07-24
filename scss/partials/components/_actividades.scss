@@ -1,0 +1,27 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+@use "../utilities/extend";
+
+.actividades-tit {
+  align-items: center;
+}
+
+.cont-actividades {
+    @extend %texto-general;
+    padding: 20px;
+    text-align: center;
+    h3 {
+        font-family: variables.$jumbo;
+        font-size: 50px;
+        margin-top: 10px;
+        color: variables.$naranja-gimnasio;
+    }
+    p {
+        margin-top: 10px;
+        @include mixins.margins(0px, 150px, 0px, 150px);
+    }
+}
+
+.actividad-comun {
+    margin-bottom: 60px;
+}
