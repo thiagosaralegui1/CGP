@@ -521,6 +521,7 @@ footer {
   }
   .full-bg {
     height: 250px;
+    background-attachment: scroll;
   }
   .carousel .carousel-control-prev-icon,
   .carousel .carousel-control-next-icon {
