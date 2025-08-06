@@ -72,9 +72,7 @@
   align-items: center;
   font-size: 20px;
   background-image: url(../assets/background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  @include mixins.full-bg(cover, center, no-repeat);
   height: 100vh;
   margin: 0;
   color: white;
