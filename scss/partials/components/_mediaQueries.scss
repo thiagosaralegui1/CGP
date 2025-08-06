@@ -86,8 +86,20 @@
   .tema-contacto h2 {
     font-size: 70px;
   }
-}
 
+  .full-bg {
+    height: 250px;
+  }
+
+  .carousel {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      padding: 15px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
 
 @media (max-width: 555px) {
   .cont-titulo-info h1 {
@@ -158,6 +170,19 @@
 
   .contenedor-formulario-contacto {
     @include mixins.margins(0px, 60px, 30px, 60px);
+  }
+
+  .full-bg {
+    height: 200px;
+  }
+
+  .carousel {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      padding: 10px;
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 

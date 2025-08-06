@@ -250,6 +250,7 @@ footer {
   padding: 30px;
   width: 50px;
   height: 50px;
+  transition: 0.3s;
 }
 
 .estilos-letras h5 {
@@ -386,6 +387,7 @@ footer {
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 20px;
+  overflow-x: hidden;
 }
 .contenedor-noticias h3 {
   font-family: "Poppins", sans-serif;
@@ -401,18 +403,6 @@ footer {
   background-attachment: fixed;
   background-image: url(../../../assets/not.png);
   height: 400px;
-}
-
-.info-noticias {
-  margin: 0px 150px 0px 150px;
-}
-
-.espaciado-noticias {
-  margin-bottom: 30px;
-}
-
-.fechas {
-  color: rgb(90, 90, 90);
 }
 
 .miestilo-card {
@@ -529,6 +519,15 @@ footer {
   .tema-contacto h2 {
     font-size: 70px;
   }
+  .full-bg {
+    height: 250px;
+  }
+  .carousel .carousel-control-prev-icon,
+  .carousel .carousel-control-next-icon {
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+  }
 }
 @media (max-width: 555px) {
   .cont-titulo-info h1 {
@@ -591,6 +590,15 @@ footer {
   }
   .contenedor-formulario-contacto {
     margin: 0px 60px 30px 60px;
+  }
+  .full-bg {
+    height: 200px;
+  }
+  .carousel .carousel-control-prev-icon,
+  .carousel .carousel-control-next-icon {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
   }
 }
 @media (max-width: 410px) {
