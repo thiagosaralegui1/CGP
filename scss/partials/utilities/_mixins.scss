@@ -1,42 +1,48 @@
 @use "../utilities/variables";
 
-@mixin flex ($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
-@mixin imagenes ($width, $height, $padding){
-    width: $width;
-    height: $height;
-    padding: $padding;
+@mixin imagenes($width, $height, $padding) {
+  width: $width;
+  height: $height;
+  padding: $padding;
 }
 
-@mixin margins ($top, $right, $bottom, $left) {
-    margin: $top $right $bottom $left;
+@mixin margins($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
 }
 
-@mixin titulo-estilo-jumbo ($size) {
-    font-family: variables.$jumbo;
-    font-size: $size;
-    color: variables.$naranja-gimnasio;
+@mixin titulo-estilo-jumbo($size) {
+  font-family: variables.$jumbo;
+  font-size: $size;
+  color: variables.$naranja-gimnasio;
 }
 
-@mixin titulo-estilo-poppins ($size, $color) {
-    font-family: variables.$poppins;
-    font-size: $size;
-    color: $color;
+@mixin titulo-estilo-poppins($size, $color) {
+  font-family: variables.$poppins;
+  font-size: $size;
+  color: $color;
 }
 
-@mixin contenedor-text-general ($display, $justify, $align, $direction){
-    display: $display;
-    justify-content: $justify;
-    text-align: $align;
-    flex-direction: $direction;
+@mixin contenedor-text-general($display, $justify, $align, $direction) {
+  display: $display;
+  justify-content: $justify;
+  text-align: $align;
+  flex-direction: $direction;
 }
 
 @mixin titulo-destacado($size) {
-    font-weight: 800;
-    font-size: $size;
-  }
+  font-weight: 800;
+  font-size: $size;
+}
+
+@mixin full-bg($bgsize, $bgposition, $bgrepeat) {
+    background-size: $bgsize;
+    background-position: $bgposition;
+    background-repeat: $bgrepeat;
+}

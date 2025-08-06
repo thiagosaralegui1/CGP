@@ -247,7 +247,6 @@ footer {
 .carousel .carousel-control-prev-icon,
 .carousel .carousel-control-next-icon {
   background-color: rgba(32, 0, 214, 0.6);
-  border-radius: 50%;
   padding: 30px;
   width: 50px;
   height: 50px;
@@ -381,6 +380,9 @@ footer {
 }
 
 .contenedor-noticias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 20px;
@@ -390,6 +392,15 @@ footer {
   font-size: 30px;
   color: rgb(255, 102, 0);
   font-weight: 1000;
+}
+
+.full-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../../../assets/not.png);
+  height: 400px;
 }
 
 .info-noticias {
@@ -402,6 +413,10 @@ footer {
 
 .fechas {
   color: rgb(90, 90, 90);
+}
+
+.miestilo-card {
+  margin: 16px;
 }
 
 .tema-contacto {
