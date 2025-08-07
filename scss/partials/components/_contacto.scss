@@ -33,3 +33,31 @@
   color: white;
   cursor: pointer;
 }
+
+.contenedor-formas-contacto {
+  @include mixins.flex(row, center, center);
+  flex-wrap: wrap;
+  h2 {
+    @include mixins.titulo-estilo-poppins(30px, variables.$naranja-gimnasio);
+  }
+}
+
+.card-body {
+  font-family: variables.$poppins;
+  color: white;
+  border: 1px solid black;
+  border-radius: 9px;
+  @extend %background-animado;
+  h5 {
+    font-weight: 900;
+  }
+  .btn-primary {
+    background-color: white;
+    color: black;
+    border: 1px solid variables.$naranja-gimnasio;
+    transition: .5s;
+    &:hover {
+      padding: 10px;
+    }
+  }
+}

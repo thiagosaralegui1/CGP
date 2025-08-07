@@ -10,3 +10,9 @@
   font-family: variables.$poppins;
   font-size: 20px;
 }
+
+%background-animado {
+  background: linear-gradient(-45deg, variables.$violeta-gimnasio, variables.$naranja-gimnasio, variables.$azul-gimnasio, #2a2754);
+  background-size: 400% 400%; /*logra ese efecto movimiento (MDN web)*/
+  animation: moverFondo 10s ease infinite;
+}

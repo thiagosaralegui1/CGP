@@ -52,9 +52,19 @@ ul {
 .estilo-burguer {
   border: none;
   background-color: #fff;
-  padding: 8px;
-  border-radius: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
   margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.estilo-burguer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+.estilo-burguer:active {
+  transform: scale(0.95) rotate(10deg);
 }
 
 .navbar-collapse {
@@ -96,6 +106,12 @@ footer {
 .contenedor-horarios-grid, .cont-actividades, .contenedor-texto-inicio p {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+}
+
+.card-body, .contenedor-info-salas {
+  background: linear-gradient(-45deg, #2a2754, rgb(255, 102, 0), rgb(0, 123, 217), #2a2754);
+  background-size: 400% 400%; /*logra ese efecto movimiento (MDN web)*/
+  animation: moverFondo 10s ease infinite;
 }
 
 .cont-titulo-info {
@@ -217,9 +233,6 @@ footer {
 }
 
 .contenedor-info-salas {
-  background: linear-gradient(-45deg, #2a2754, rgb(255, 102, 0), rgb(0, 123, 217), #2a2754);
-  background-size: 400% 400%; /*logra ese efecto movimiento (MDN web)*/
-  animation: moverFondo 10s ease infinite;
   color: white;
   padding: 40px;
   text-align: center;
@@ -446,6 +459,38 @@ footer {
   background-color: rgb(255, 102, 0);
   color: white;
   cursor: pointer;
+}
+
+.contenedor-formas-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenedor-formas-contacto h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 102, 0);
+}
+
+.card-body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border: 1px solid black;
+  border-radius: 9px;
+}
+.card-body h5 {
+  font-weight: 900;
+}
+.card-body .btn-primary {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(255, 102, 0);
+  transition: 0.5s;
+}
+.card-body .btn-primary:hover {
+  padding: 10px;
 }
 
 @media (max-width: 1150px) {
