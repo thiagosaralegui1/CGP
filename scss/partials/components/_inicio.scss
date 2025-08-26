@@ -180,7 +180,7 @@
     font-weight: 300;
     @include mixins.margins(0px, 200px, 0px, 200px);
   }
-  img {
+  .ubicacion {
     width: 40%;
     margin: 0 auto;
     display: block;
