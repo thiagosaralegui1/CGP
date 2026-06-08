@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  caret-color: transparent;
 }
 
 a {
@@ -103,12 +104,14 @@ footer {
   transform: 0.3s;
 }
 
-.contenedor-horarios-grid, .cont-actividades, .contenedor-texto-inicio p {
+.contenedor-horarios-grid,
+.cont-actividades,
+.contenedor-texto-inicio p {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
 }
 
-.miestilo-card2, .contenedor-info-salas {
+.miestilo-card2,
+.contenedor-info-salas {
   background: linear-gradient(-45deg, #2a2754, rgb(255, 102, 0), rgb(0, 123, 217), #2a2754);
   background-size: 400% 400%; /*logra ese efecto movimiento (MDN web)*/
   animation: moverFondo 10s ease infinite;
@@ -169,47 +172,50 @@ footer {
 }
 .informacion-aparte {
   margin: 0px 230px 0px 230px;
+  font-size: 20px;
 }
 
 .presentación {
   font-weight: 800;
-  font-size: 40px;
+  font-size: 26px;
   margin-top: 30px;
 }
 
 .nuestras-paginas {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
   align-items: center;
-  font-size: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
   background-image: url(../assets/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   margin: 0;
-  color: white;
-  font-weight: 700;
-  font-size: 24px;
   padding: 20px;
 }
+
 .nuestras-paginas a {
-  display: inline-block;
+  display: block;
   width: 700px;
-  background-color: rgba(255, 102, 0, 0.575);
+  max-width: 100%;
+  background-color: rgba(255, 102, 0, 0.724);
   padding: 30px;
   border-radius: 12px;
-  display: block;
   margin: 10px;
   text-decoration: none;
   color: white;
   transition: 0.3s;
+  box-sizing: border-box;
 }
+
 .nuestras-paginas a:hover {
   background-color: rgba(255, 102, 0, 0.918);
+  cursor: pointer;
 }
 
 .extra-deco {
@@ -287,6 +293,8 @@ footer {
   text-align: center;
   flex-direction: column;
   padding: 30px;
+  align-items: center;
+  width: 100%;
 }
 .contenedor-ubicación h2 {
   font-family: "Poppins", sans-serif;
@@ -298,25 +306,10 @@ footer {
   font-weight: 300;
   margin: 0px 200px 0px 200px;
 }
-.contenedor-ubicación img {
-  width: 40%;
-  margin: 0 auto;
-  display: block;
-}
 
-.contenedor-ubicacion-botones {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.contenedor-ubicacion-botones .boton-google-maps {
-  margin-top: 30px;
-  padding: 10px;
-  background-color: rgba(145, 255, 0, 0.555);
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  color: black;
-  transition: 0.3s;
+.contenedor-ubicación iframe {
+  border: none;
+  max-width: 100%;
 }
 
 .actividades-tit {
@@ -428,7 +421,9 @@ footer {
   margin: 16px;
   border: 3px solid rgb(255, 102, 0);
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   width: 18rem;
 }
 
