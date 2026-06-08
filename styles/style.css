@@ -110,6 +110,11 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
+.texto-descriptivo {
+  font-size: 20px;
+  margin: 90px 90px 0px;
+}
+
 .miestilo-card2,
 .contenedor-info-salas {
   background: linear-gradient(-45deg, #2a2754, rgb(255, 102, 0), rgb(0, 123, 217), #2a2754);
